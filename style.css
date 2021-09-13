@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: hsl(0, 0%, 95%);
+	font-family: 'Lexend Deca', sans-serif;
+	line-height: 1.6;
+	font-size: 15px;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto ;
+	border-radius: 8px;
+	margin-top: 25px;
+}
+.one, .two, .three{
+	height: 350px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	color: hsl(0, 0%, 95%);
+}
+.one h2, .two h2, .three h2{
+	margin-top: 15px;
+}
+.one p, .two p, .three p{
+	display: block;
+	color: hsla(0, 0%, 100%, 0.75);
+	margin-top: 20px;
+	width: 90%;
+}
+.one button, .two button, .three button{
+	border: none;
+	border-radius: 18px;
+	outline: none;
+	width: 55%;
+	height: 35px;
+	padding: 5px;
+	font-family: 'Lexend Deca', sans-serif;
+	margin-top: 15px;
+	font-size: 15px;
+}
+.one button:hover, .two button:hover, .three button:hover{
+	background-color: transparent;
+	border: hsl(0, 0%, 95%) 2px solid;
+	color: hsla(0, 0%, 100%, 0.75);
+	cursor: pointer;
+}
+.one{
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 7px 7px 0 0;
+}
+.one button{
+	color: hsl(31, 77%, 52%);
+}
+.two{
+	background-color: hsl(184, 100%, 22%);
+}
+.two button{
+	color: hsl(184, 100%, 22%);
+}
+.three{
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 0 7px 7px;
+}
+.three button{
+	color: hsl(179, 100%, 13%);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+	.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+}
+
+@media screen and (min-width: 915px){
+	main{
+		flex-direction: row;
+		margin-top: 35px;
+	}
+	.icon{
+		margin-top: 25px;
+	}
+	.one{
+		border-radius: 7px 0 0 7px;
+	}
+	.three{
+		border-radius: 0 7px 7px 0;
+	}
+	.one, .two, .three{
+		height: 550px;
+	}
+	.one h2, .two h2, .three h2{
+		margin-top: 25px;
+	}
+	.one p, .two p, .three p{
+		width: 70%;
+		line-height: 1.8;
+		margin-top: 35px;
+	}
+	.one button, .two button, .three button{
+		margin-top: 75px;
+		height: 45px;
+		width: 60%;
+	}
+}
